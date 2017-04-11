@@ -1,0 +1,30 @@
+<ion-view style="" class=" " id="page7" title="Promotions">
+    <ion-content class="has-header" padding="true">
+
+        <style>
+            .img_prom{
+                width: 100%;
+            }
+        </style>
+
+        <div class="">
+            <img style="display: block; margin-left: auto; margin-right: auto;" src="img/promotions.jpg" height="auto" width="100%">
+        </div>
+
+        <div style="width: 285px; height: 23px;" class="spacer"></div>
+
+        <div ng-controller="PromotionGet" class="list card ">
+
+            <div ng-repeat='todo in todos | filter:query' item item-text-wrap>
+                <ion-item class="item-divider item-text-wrap" ><b>{{todo.title}}</b></ion-item>
+                <ion-item><img class="img_prom item-text-wrap" src='http://helenaboitsova.com/lifeadvisor2/public/img/{{todo.image}}' alt="Письма мастера дзен"></ion-item>
+                <ion-item class="item-text-wrap">Promotion key: <b>{{todo.pKey}}</b></ion-item>
+                <ion-item>Valid: {{todo.dateValid}}</ion-item>
+                <ion-item>Published: {{todo.datePublished}}</ion-item>
+                <br/>
+            </div>
+
+        </div>
+
+    </ion-content>
+</ion-view>

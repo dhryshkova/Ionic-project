@@ -1,0 +1,80 @@
+<ion-view style="" class=" " id="page5" title="Home">
+    <ion-content class="has-header" padding="true">
+        <div class=" button-bar " id="home-button-bar2">
+            <a class=" button button-dark  button-block " id="home-button9" ui-sref="tabsController.login">Login</a>
+            <a class=" button button-dark  button-block " id="home-button10" ui-sref="tabsController.signup">Register</a>
+        </div>
+        <div class="">
+            <img style="display: block; margin-left: auto; margin-right: auto;" src="img/Xt2ZTvsgSjHr2HhHCeBt_logo.png" height="auto" width="auto">
+        </div>
+        <div style="width: 300px; height: 29px;" class="spacer"></div>
+        <p class=" " style="color:#000000;text-align:center;" id="home-markdown2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer imperdiet enim ut dignissim interdum. In viverra, quam et semper ultrices, nunc metus varius augue, sed dictum lacus mi nec elit.</p>
+        <div class=" button-bar " id="home-button-bar1"></div>
+        <div style="width: 300px; height: 32px;" class="spacer"></div>
+        <ion-list class=" " id="home-list14">
+            <ion-item style="" ui-sref="tabsController.recipes" id="home-list-item38" class="item-thumbnail-left item-icon-right assertive  ">
+                <img src="img/yaaNiwCWRkaFGvVqTWXi_recipes2.jpg">
+                <h2assertive>Recipes
+                    <p style="white-space:normal;">It is a long established fact that a reader will be...</p>
+                    <i class="icon ion-android-restaurant"></i>
+                </h2assertive>
+            </ion-item>
+            <ion-item style="" ui-sref="tabsController.finances" id="home-list-item45" class="item-thumbnail-left item-icon-right assertive  ">
+                <img src="img/HSoxjJqSpOFz8mdFppbg_finances2.jpg">
+                <h2assertive>Finances
+                    <p style="white-space:normal;">It is a long established fact that a reader will be...</p>
+                    <i class="icon ion-social-usd"></i>
+                </h2assertive>
+            </ion-item>
+            <ion-item style="" ui-sref="tabsController.timeManagment" id="home-list-item46" class="item-thumbnail-left item-icon-right assertive  ">
+                <img src="img/TFMiYL0ZQMKAWsFBAZ2V_time2.jpg">
+                <h2assertive>Time Managment
+                    <p style="white-space:normal;">It is a long established fact that a reader will be...</p>
+                    <i class="icon ion-calendar"></i>
+                </h2assertive>
+            </ion-item>
+            <ion-item style="" ui-sref="tabsController.health" id="home-list-item47" class="item-thumbnail-left item-icon-right assertive  ">
+                <img src="img/QS1Jg1LQROmpgGRVO3bG_health2.jpg">
+                <h2assertive>Health
+                    <p style="white-space:normal;">It is a long established fact that a reader will be...</p>
+                    <i class="icon ion-ios-pulse-strong"></i>
+                </h2assertive>
+            </ion-item>
+            <ion-item style="" ui-sref="tabsController.house" id="home-list-item48" class="item-thumbnail-left item-icon-right assertive  ">
+                <img src="img/2VNVqgURpmzpfZjzpl3q_house2.jpg">
+                <h2assertive>House
+                    <p style="white-space:normal;">It is a long established fact that a reader will be...</p>
+                    <i class="icon ion-android-home"></i>
+                </h2assertive>
+            </ion-item>
+            <ion-item style="" ui-sref="tabsController.people" id="home-list-item49" class="item-thumbnail-left item-icon-right assertive  ">
+                <img src="img/Jo2xaZUmRNmZ7nghyOIb_people2.jpg">
+                <h2assertive>People
+                    <p style="white-space:normal;">It is a long established fact that a reader will be...</p>
+                    <i class="icon ion-heart"></i>
+                </h2assertive>
+            </ion-item>
+        </ion-list>
+        <div style="width: 300px; height: 30px;" class="spacer"></div>
+        <div id="home-card24" class="list card ">
+            <div class=" item item-image">
+                <img style="display: block; margin-left: auto; margin-right: auto;" src="img/yWbASN9MQ5asUcNdOeeo_newsletter2.jpg" height="auto" width="100%">
+            </div>
+            <h4 class=" " style="color: rgb(92, 92, 92); font-weight: 600; text-align: center;" id="home-heading1">Subscribe Our Newsletter</h4>
+            <div ng-controller="MinMaxCtrl">
+                <form name="myForm" class="list " id="home-form7">
+                    <label id="home-input6" class="item item-input ">
+                        <span class="input-label">E-mail:</span>
+                        <input name="email" placeholder="Insert your e-mail" type="email" ng-model="formModel.signup_email_address" required>
+
+                    </label>
+                    <div class="padding">
+                        <p ng-show="myForm.email.$error.required">* Email is required</p>
+                        <p ng-show="myForm.email.$error.email">* Email is invalid</p>
+                    </div>
+                    <button class=" button button-dark  button-block " id="home-button15" ng-click="onSubmit()">Subscribe Now!</button>
+                </form>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

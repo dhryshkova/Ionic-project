@@ -1,0 +1,18 @@
+<ion-view style="" class=" " id="page24" title="House">
+    <ion-content class="has-header" padding="true">
+        <div class=" button-bar " id="house-button-bar13"></div>
+
+        <div ng-controller="BlogCtrl">
+            <div ng-repeat="blog in blogs">
+                <ion-item style="" ui-sref="tabsController.spinachEnchiladas({id: blog.ID_page})" id="blog.ID_page" ng-if="blog.Menu === 'House'" class="item-thumbnail-left item-icon-right assertive  ">
+                    <img ng-src="http://helenaboitsova.com/lifeadvisor2/public/img/{{blog.ID_image}}">
+                    <h2assertive>{{blog.Title}}
+                        <p ng-bind-html="(blog.Content | limitTo: 55) + '...'"></p>
+                        <i class="icon ion-android-home"></i>
+                    </h2assertive>
+                </>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>

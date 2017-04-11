@@ -1,0 +1,39 @@
+<ion-view style="" class=" " id="page16" title="Mortgage Calculator">
+    <ion-content class="has-header" padding="true">
+        <div class="">
+            <img style="display: block; margin-left: auto; margin-right: auto;" src="img/HgcqY5YwQfuZx26mzHyw_mortgage.jpg" height="auto" width="100%">
+        </div>
+        <body ng-app="mortgageApp">
+        <div class="container">
+            <div class="jumbotron">
+                <form ng-controller="mainCtrl">
+                    <!-- Loan Amount -->
+                    <br>
+                    <h4 style="color: rgb(48, 48, 48); text-align: center;" for="loan-amount">Loan Amount: </h4>
+                    <label class="item item-input">
+                        <input style="color: rgb(48, 48, 48); text-align: center;" type="text" id="loan-amount" ng-change="computeMortgage()" ng-model="mortgage.loanAmount">
+                    </label>
+                    <br>
+                    <!-- Interest Rate -->
+                    <h4 style="color: rgb(48, 48, 48); text-align: center;" for="interest-rate">Interest Rate (%): </h4>
+                    <label class="item item-input">
+                        <input style="color: rgb(48, 48, 48); text-align: center;" type="text" id="interest-rate" ng-change="aprMonthly()" ng-model="mortgage.interestRate">
+                    </label>
+                    <br>
+                    <!-- Mortgage Period -->
+                    <h4 style="color: rgb(48, 48, 48); text-align: center;" for="mortgage-period">Mortgage Period (years): </h4>
+                    <label class="item item-input">
+                        <input style="color: rgb(48, 48, 48); text-align: center;" type="text" id="mortgage-period" ng-change="numOfPayments()" ng-model="mortgage.mortgagePeriod">
+                    </label>
+                    <br>
+                    <div class="build-helper">
+                        <h4 style="color: rgb(48, 48, 48); text-align: center;"> Total Monthly Mortgage Payment:</h4>
+                            <h3 style="color: red; text-align: center;"> {{mortgage.monthlyPayment | currency:"USD $ "}}</h3>
+                    </div>
+                    <br>
+                </form>
+            </div>
+        </div>
+        </body>
+    </ion-content>
+</ion-view>

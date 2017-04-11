@@ -1,0 +1,24 @@
+<ion-view style="" class=" " id="page12" title="Signup">
+    <ion-content class="has-header" padding="true">
+        <div ng-controller="RegisterCtrl">
+        <form name="myForm" class="list " id="signup-form4">
+            <ion-list class=" " id="signup-list13">
+
+                <label id="signup-input4" class="item item-input ">
+                    <span class="input-label">Username</span>
+                    <input placeholder="John_Doe" name="username" type="text" ng-model="formModel.Username" required>
+                </label>
+                <label id="signup-input5" class="item item-input ">
+                    <span class="input-label">Password</span>
+                    <input placeholder="" name="password" type="password" ng-model="formModel.Password" required>
+                </label>
+                <div class="padding">
+                    <p ng-show="myForm.username.$error.required">* Username is required</p>
+                    <p ng-show="myForm.password.$error.required">* Password is required</p>
+                </div>
+            </ion-list>
+            <button class=" button button-stable  button-block " id="signup-button3" ng-click="onSubmit()">Sign up</button>
+        </form>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,18 @@
+<ion-view style="" class=" " ng-controller="spinachEnchiladasCtrl" id="page18" title="{{item.Title}}">
+    <ion-content class="has-header" padding="true">
+        <div>
+            <div class="item item-image">
+                <img style="display: block; margin-left: auto; margin-right: auto;" ng-src="http://helenaboitsova.com/lifeadvisor2/public/img/{{item.ID_image}}" height="auto" width="100%">
+            </div>
+            <br/>
+            <div style="padding-left: 10px;">
+                <h2>{{item.Title}}</h2>
+                <p style="white-space:normal;">{{item.Tags}}</p>
+                <p style="color: black;" ng-bind-html="item.Content"></p>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>
+
+
